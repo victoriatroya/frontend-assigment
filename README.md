@@ -15,6 +15,7 @@ En total no debería tomarte mas de 1 día, pero usa tu tiempo sabiamente.
 ## Que debes hacer?
 
 Intenta reproducir el mock-up que encuentras en `mockup/DocRed-mockup.png` lo más cercano posible.
+Crea una version responsive del mock-up.
 Presta atención a los detalles.
 
 El trabajo final debe mostrar un artículo como en el mock-up. Esperamos que los botones sean botones y los links sean links aunque estos no lleven a ningún lado.
