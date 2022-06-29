@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Image from "next/image";
 
@@ -13,6 +13,12 @@ import SettingsIcon from "../../public/assets/images/gear-solid.svg";
 import styles from "./header.module.scss";
 
 const Header = () => {
+  const [searchValue, setSearchValue] = useState('');
+
+  const handleChange = (e) => {
+    setSearchValue(e.target.value);
+  };
+  console.log(searchValue);
   return (
     <div className={styles.header}>
       <div className={styles.left}>
@@ -24,13 +30,17 @@ const Header = () => {
             <Image src={SearchIcon} width={15} height={15} />
           </div>
           <div className={styles.right}>
-            <input type="text" placeholder="¿Qué estás buscando?" />
+            <input  value={searchValue} type="text" placeholder="¿Qué estás buscando?" onChange={handleChange} />
           </div>
         </div>
         <div className={styles.home}>
           <Image src={HomeIcon} width={15} height={15} />
           <p className={styles.text}>Inicio</p>
           <Image src={ArrowDown} width={15} height={15} />
+        </div>
+        <div className={styles.mobile}>
+          <Image src={HomeIcon} width={15} height={15} />
+          <Image src={SearchIcon} width={15} height={15} />
         </div>
       </div>
       <div className={styles.right}>

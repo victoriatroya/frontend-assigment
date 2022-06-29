@@ -1,10 +1,6 @@
 import React from "react";
 import Image from "next/image";
 
-import data from "./data";
-
-
-
 import styles from "./news.module.scss";
 
 const News = ({
@@ -17,9 +13,10 @@ const News = ({
   favIcon,
   viewIcon,
   commentIcon,
+  id,
 }) => {
   return (
-    <div className={styles.news}>
+    <div className={styles.news} key={id}>
       <div className={styles.card}>
         <div className={styles.left}>
           <Image src={newImage} width={120} height={120} />
@@ -27,6 +24,7 @@ const News = ({
         <div className={styles.right}>
           <h1 className={styles.title}>{title}</h1>
           <p className={styles.subtitle}>Por: {newContent}</p>
+          <hr />
           <div className={styles.items}>
             <div className={styles.item}>
               <Image src={favIcon} width={15} height={15} />

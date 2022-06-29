@@ -39,6 +39,12 @@
         padding: 8px 0;
       }
 
+      hr {
+        background-color: gray;
+        width: 90%;
+        opacity: 0.3;
+      }
+
       .items {
         display: grid;
         grid-template-columns: repeat(3, 50px);
@@ -67,5 +73,39 @@
   .card {
     border-radius: 0 0 15px 15px;
     border-bottom: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .news {
+    .card {
+      display: grid;
+      grid-template-columns: 100px auto;
+      justify-content: normal;
+
+      .left {
+        width: 100%;
+      }
+
+      .right {
+        padding: 10px 0;
+
+        .title {
+          font-family: Arial, serif;
+          font-size: 14px;
+          font-weight: bold;
+          letter-spacing: 0;
+          width: auto;
+        }
+
+        .subtitle {
+          font-family: Arial, serif;
+          font-size: 12px;
+          color: lightslategray;
+          padding: 8px 0;
+        }
+
+      }
+    }
   }
 }
