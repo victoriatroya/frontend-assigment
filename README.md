@@ -36,4 +36,7 @@ Puntos extras:
 - Linting y Prettier
 - Docker
 
-
+- INSTRUCCIONES
+- yarn install
+- next dev
+- http://localhost:3000/
