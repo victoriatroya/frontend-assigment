@@ -18,7 +18,7 @@ const Header = () => {
   const handleChange = (e) => {
     setSearchValue(e.target.value);
   };
-  console.log(searchValue);
+
   return (
     <div className={styles.header}>
       <div className={styles.left}>
