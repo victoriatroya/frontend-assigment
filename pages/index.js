@@ -35,7 +35,7 @@ const HomePage = () => {
           <div>
             {dataInformation?.map((item, index) => (
               <News
-                id={(index + 1).toString()}
+                key={(index + 1).toString()}
                 titleNew="Noticia relacionada"
                 title={item.title}
                 favsNumber={item.favs}
